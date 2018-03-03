@@ -1,4 +1,18 @@
 #!/bin/bash
+
+help(){
+	echo -e "$0 [options] [argument]";
+	echo -e "updates todo list for conky";
+	echo -e "\t-a, add\t\tappends the argument to conky";
+	echo -e "\t-r, remove\tremoves the argument(th) number or all in todo";
+	echo -e "\t-h, help\tdisplay this help and exit";	
+}
+
+if [[ "$#" -ne "2" ]]; then
+	help ;
+	exit 1;
+fi
+
 op="$1";
 
 refresh(){
@@ -13,22 +27,18 @@ add(){
 
 
 remove(){
+	id=$1;
+	if [[ "$1" -eq "all" ]]; then
+		id="1,$";
+	fi
 	echo "remove: $1"
-	sed "$1d" -i "$HOME/.conky/todo/To-do.txt"
+	sed "${id}d" -i "$HOME/.conky/todo/To-do.txt"
 	refresh;
 }
 
-help(){
-	echo -e "$0 [options] [argument]";
-	echo -e "updates todo list for conky";
-	echo -e "\t-a, add\t\tappends the argument to conky";
-	echo -e "\t-r, remove\tremoves the argument(th) number in todo";
-	echo -e "\t-h, help\tdisplay this help and exit";	
-}
 
 
-
-case $op in 
+case $op in	
 	"add"|"-a") 
 		shift;
 		add "$@";

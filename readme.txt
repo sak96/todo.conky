@@ -13,3 +13,4 @@ How to install?
 How to use?
  to add todo use: todo add "task 1"
  to remove todo number 7 use: todo remove 7 
+ to remove all use: todo remove all
