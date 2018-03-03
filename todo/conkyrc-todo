@@ -41,7 +41,7 @@ TEXT
 ${alignc}${font Poiret One:weight=Light:size=30}${color1}TODO${color}${font}
 ${voffset 5}
 ${font Poiret One:weight=Light:size=20}${color1}\
-${execi 5 cat -n "$HOME/.conky/todo/To-do.txt" | fmt -s -w 50}\
+${execi 60 cat -n "$HOME/.conky/todo/To-do.txt" | fmt -s -w 50}\
 ${color} 
 ${font}
 
