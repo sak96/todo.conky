@@ -2,8 +2,7 @@
 op="$1";
 
 refresh(){
-	pkill -c "conky -c $HOME/.conky/todo/conkyrc-todo";
-	conky -c $HOME/.conky/todo/conkyrc-todo;
+	touch -m "$HOME/.conky/todo/conkyrc-todo";
 }
 
 add(){

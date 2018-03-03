@@ -1,6 +1,4 @@
-############
-# Settings #
-############
+# Settings 
 background yes
 use_xft yes
 xftfont Liberation Sans:size=9
@@ -31,17 +29,19 @@ no_buffers yes
 uppercase no
 cpu_avg_samples 2
 override_utf8_locale no
-##########
-# Output #
-##########
+
+
+
+# Output 
 own_window_argb_value 0
 own_window_colour 000000
 TEXT
+
 # ..: TODO :..
 ${alignc}${font Poiret One:weight=Light:size=30}${color1}TODO${color}${font}
 ${voffset 5}
 ${font Poiret One:weight=Light:size=20}${color1}\
-${execi 60 cat -n "$HOME/.conky/todo/To-do.txt" | fmt -s -w 50}\
+${exec cat -n "$HOME/.conky/todo/To-do.txt" | fmt -s -w 50}\
 ${color} 
 ${font}
 
