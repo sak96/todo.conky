@@ -1,16 +1,21 @@
 #!/bin/bash
 op="$1";
 
+refresh(){
+	touch -m "$HOME/.conky/todo/conkyrc-todo";
+}
 
 add(){
 	echo "added: $1"
 	echo "$1" >> "$HOME/.conky/todo/To-do.txt"
+	refresh;
 }
 
 
 remove(){
 	echo "remove: $1"
 	sed "$1d" -i "$HOME/.conky/todo/To-do.txt"
+	refresh;
 }
 
 help(){
