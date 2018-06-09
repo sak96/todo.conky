@@ -1,16 +1,29 @@
-What?
- a simple conky todo list
+#*TODO-CONKY*
+##What?
+ a simple conky todo list :scroll:
 
-Why?
- to remember what to do :P
+##Why?
+    1.to remember what to do :smiley:
+    1.to have it on desktop in front of :eyes: 
 
-How to install?
- install conky 
- copy todo to .conky folder in your home
- the execute the following command
- echo "alias todo=\"$Home/.conky/todo/todo.sh\"" >> .bashrc
+## Depenedency
+    1.conky
+    1.bash
 
-How to use?
- to add todo use: todo add "task 1"
- to remove todo number 7 use: todo remove 7 
- to remove all use: todo remove all
+##How to install?
+    1. The make way :sunglasses:
+    > make install
+
+    1. the manual way :innocent:
+    ```
+    copy todo to .conky folder in your home
+    echo "alias todo=\"$Home/.conky/todo/todo.sh\"" >> .bashrc
+    ```
+
+##How to use?
+    1.to add todo use
+    > todo add "task 1"
+    1.to remove todo number 7 use
+    > todo remove 7 
+    1.to remove all use
+    > todo remove all
