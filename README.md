@@ -12,13 +12,10 @@ a simple conky todo list :scroll:
 1. bash
 
 ## How to install?
-1. The make way :sunglasses:
 > make install
-1. the manual way :innocent:
-```
-copy todo to .conky folder in your home
-echo "alias todo=\"$Home/.conky/todo/todo.sh\"" >> .bashrc
-```
+
+## How to uninstall?
+> make clean
 
 ## How to use?
 1. to add todo use
