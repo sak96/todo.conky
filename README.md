@@ -24,3 +24,5 @@ a simple conky todo list :scroll:
 > todo remove 7 
 1. to remove all use
 > todo remove all
+1. to list all use
+> todo list
