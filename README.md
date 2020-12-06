@@ -4,6 +4,8 @@
 
 a simple conky todo list :scroll:
 
+![todo screenshot](./screenshot/Screenshot.png)
+
 ## Why?
 
 1. to remember what to do :smiley:
