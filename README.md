@@ -1,28 +1,33 @@
 # TODO-CONKY
 
 ## What?
+
 a simple conky todo list :scroll:
 
 ## Why?
-1. to remember what to do :smiley:
-1. to have it on desktop in front of :eyes: 
 
-## Depenedency
-1. conky
-1. bash
+1. to remember what to do :smiley:
+1. to have it on desktop in front of :eyes:
+
+## Dependency
+
+1. conky (uses lua)
 
 ## How to install?
-> make install
+
+1. move todo folder to location of you choice
+1. run `conky -c $path_to_todo_conf`
 
 ## How to uninstall?
-> make clean
+
+1. delete todo folder
 
 ## How to use?
-1. to add todo use
-> todo add "task 1"
-1. to remove todo number 7 use
-> todo remove 7 
-1. to remove all use
-> todo remove all
-1. to list all use
-> todo list
+
+1. use text editor to edit `todo.md`. make an alias for faster access.
+1. create a task with `##`
+1. add step to using `[ ]`
+1. make step active using `[.]`
+1. mark done step using `[x]`
+1. __Note__: these symbols should be at start of line
+1. __Note__: order of task is maintained. so add important once first
