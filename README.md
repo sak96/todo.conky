@@ -18,7 +18,7 @@ a simple conky todo list :scroll:
 ## How to install?
 
 1. move todo folder to location of you choice
-1. run `conky -c $path_to_todo_conf`
+1. run `conky -qc $path_to_todo_conf`
 
 ## How to uninstall?
 
