@@ -27,9 +27,11 @@ a simple conky todo list :scroll:
 ## How to use?
 
 1. use text editor to edit `todo.md`. make an alias for faster access.
-1. create a task with `##`
-1. add step to using `[ ]`
-1. make step active using `[.]`
-1. mark done step using `[x]`
-1. __Note__: these symbols should be at start of line
-1. __Note__: order of task is maintained. so add important once first
+2. create a task with `##`
+3. add step to using `[ ]`
+4. make step active using `[.]`
+5. mark done step using `[x]`
+
+> [!NOTE]
+> * these symbols should be at start of line
+> * order of task is maintained. So add important once first
